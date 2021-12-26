@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jersson Arrivasplata Rojas | Software Developer</title>
+    <link rel="icon" type="image/png" href="./icon.png" >
+
+    <!--Inicio Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">   
+    <!--Fin Fonts-->
+
+    <!--Inicio Seo-->
+    <meta name="author" content="Jersson Giomar Arrivasplata Rojas" />
+    <meta name="copyright" content="Jersson Giomar Arrivasplata Rojas" />
+    <meta name="description" content="Full Stack Developer y Desarrollador de Aplicaciones móviles, con experiencia en desarrollo de sistemas empresariales, desarrollo de procesos, análisis de negocio en los sectores de transporte, servicios, educación y turismo.
+    Co-Fundador de startup #SnapStore">
+    <meta name="keywords" content="#software, #developer, #developments, #jerssonarrivasplata, #jerssonarrivasplataDEV, #jerssonarrivasplataPERU"/>
+    <!--Fin Seo-->
+
+    <!--Inicio Limpiar Cache-->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!--Fin Limpiar Cache-->
+
+
+    <link href="assets/css/globals.css" rel="stylesheet">
+    <link href="assets/css/contacto.css" rel="stylesheet">
+
+</head>
+    <body>
+        <!-- Messenger plugin del chat Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your plugin del chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "1352903598163611");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v11.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!--<div>
+            
+        </div>-->
+        <div>
+            <header>
+                <nav>
+                    <div>
+                        <img src="./icon.png" alt="Logo de la Marca Jersson Giomar Arrivasplata Rojas"/><a href="#">Menú</a>
+                    </div>
+                    <ul>
+                        <li><a href="index.html#sobremi">Sobre Mí</a></li>
+                        <li><a href="index.html#miexperiencia">Mi Experiencia</a></li>
+                        <li><a href="educacion.html">Mi Educación</a></li>
+                        <li><a href="proyectos.html">Mis Proyectos</a></li>
+                        <li><a href="contacto.html">Contactame</a></li>
+                        <li><button onclick="menu()" >Cerrar</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <header>
+                    <button onclick="menu()" ><img src="./assets/img/menu.png" alt="Logo de menu de Jersson Giomar Arrivasplata Rojas"/></button>
+                </header>
+                <section>
+                    <p>CONTÁCTAME</p>
+                    <ul class="pl-2">
+                        <li>Linkedin: <a target="_blank" href="https://linkedin.com/in/jerssonarrivasplata">linkedin.com/in/jerssonarrivasplata</a></li>
+                        <li>Facebook: <a target="_blank" href="https://facebook.com/jerssonarrivasplata">facebook.com/jerssonarrivasplata</a></li>
+                        <li>Instagram: <a target="_blank" href="https://instagram.com/jerssonarrivasplata">instagram.com/jerssonarrivasplata</a></li>
+                        <li>WebSite: <a target="_blank" href="https://jerssonarrivasplata.com">jerssonarrivasplata.com</a></li>
+                        <li>Número de teléfono: <a target="_blank" href="tel:(51)987347691">987347691 (Móvil)</a></li>
+                        <li>Dirección: Jirón Zorritos 1134 - Cercado de Lima</li>
+                    </ul>
+                    <form action="php/message.php" method="POST" >
+                        <h1>ENVIAR MENSAJE</h1>
+                        <div>
+                            <label>Ingresa tu nombre</label>
+                            <input name="name" type="text" maxlength="100" placeholder="Ingresar Nombre" required/>
+                        </div>
+                        <div>
+                            <label>Ingresa tu celular</label>
+                            <input  name="celphone" type="text" maxlength="50" placeholder="Ingresar celular" required/>
+                        </div>
+                        <div>
+                            <label>Ingresa tu correo</label>
+                            <input  name="email" type="email" maxlength="190" placeholder="Ingresar correo" required/>
+                        </div>
+                        <div>
+                            <label>Ingresa tu mensaje</label>
+                            <textarea  name="message" maxlength="1000000" placeholder="Ingresar mensaje" required></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar"/>
+                        </div>
+                    </form>
+                </section>
+                
+            </main>
+            <footer>
+                <p>
+                    Desarrollado por Jersson G. Arrivasplata Rojas
+                </p>
+            </footer>
+        </div>
+        <script src="assets/javascript/globals.js" type="text/javascript"></script>
+
+    </body>
+</html>
